@@ -1,9 +1,12 @@
 import { createRoot } from 'react-dom/client';
+import './App.css';
 import Navbar from './Navbar';
-const root =createRoot(document.getElementById("root"));
+import Footer from './Footer';
 
-function Greeting(props){
-  return(
+const root = createRoot(document.getElementById("root"));
+
+function Greeting(props) {
+  return (
     <div>
       <h1>Hello, Good Morning! {props.name} {props.emoji}</h1>
     </div>
@@ -11,10 +14,13 @@ function Greeting(props){
 }
 
 root.render(
-  <>
-  <Navbar/>
-  <Greeting name="ABC" emoji="👋"/>
-  <Greeting name="DEF" emoji="😊"/>
-  <Greeting name="XYZ" emoji="🫡"/>
-  </>
-)
+  <div className="app-container">
+    <Navbar />
+    <main className="content">
+      <Greeting name="ABC" emoji="👋" />
+      <Greeting name="DEF" emoji="😊" />
+      <Greeting name="XYZ" emoji="🫡" />
+    </main>
+    <Footer />
+  </div>
+);
