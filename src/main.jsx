@@ -1,5 +1,5 @@
 import { createRoot } from 'react-dom/client';
-
+import Navbar from './Navbar';
 const root =createRoot(document.getElementById("root"));
 
 function Greeting(props){
@@ -12,6 +12,7 @@ function Greeting(props){
 
 root.render(
   <>
+  <Navbar/>
   <Greeting name="ABC" emoji="👋"/>
   <Greeting name="DEF" emoji="😊"/>
   <Greeting name="XYZ" emoji="🫡"/>
