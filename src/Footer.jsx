@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { Link } from "react-router-dom";
 import './Footer.css';
 import { Instagram } from 'lucide-react';
 
@@ -19,10 +21,10 @@ export default function Footer() {
         <div className="footer-links">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Offers</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/">Home</Link></li>
+        <li><Link to="/about">About</Link></li>
+        <li><Link to="/services">Services</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
           </ul>
         </div>
 
