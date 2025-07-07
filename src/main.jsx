@@ -6,10 +6,11 @@ import {
 } from 'react-router-dom';
 
 import Home from "./Home.jsx";
-import About from "./About.jsx";
-import Contact from "./Contact.jsx";
-import Login from "./Login.jsx";
-import Services from "./Services.jsx";
+import About from "./components/About/About.jsx";
+import Contact from './components/Contact/Contact.jsx';
+import Login from "./components/Login/Login.jsx";
+import Services from './components/Services/Services.jsx';
+import CategoryPage from './components/Categories/CategoryPage.jsx';
 
 const root = createRoot(document.getElementById("root"));
 
