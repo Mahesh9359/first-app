@@ -1,0 +1,65 @@
+.popular-restaurants {
+  padding: 60px 5% 40px;
+  background: linear-gradient(to right, #ffffff, #f9f9f9);
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 700;
+}
+
+.restaurant-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.restaurant-card {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.restaurant-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.restaurant-info {
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.restaurant-info h3 {
+  font-size: 1.3rem;
+  margin: 0;
+  color: #222;
+}
+
+.restaurant-info p {
+  color: #666;
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
+
+.rating-badge {
+  background-color: #6a11cb;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-top: 8px;
+}
