@@ -1,0 +1,61 @@
+.categories {
+  padding: 60px 5% 40px;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  text-align: center;
+}
+
+.categories-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 700;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 30px;
+  justify-items: center;
+}
+
+.category-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px 15px;
+  width: 100%;
+  max-width: 160px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.category-image {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.category-card:hover .category-image {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.category-name {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 0;
+}
+.category-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* 👈 Fixes the width issue */
+  width: 100%;    /* 👈 Ensures it takes full grid space */
+  height: 100%;   /* Optional: match card height */
+}
+
+
