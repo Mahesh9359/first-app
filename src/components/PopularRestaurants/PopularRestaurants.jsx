@@ -4,6 +4,7 @@ import burgerImg from './../../assets/images/burger.jpg';
 import dessertsImg from './../../assets/images/dessert.jpg';
 import dosaImg from './../../assets/images/south-indian.jpg';
 import pizzaImg from './../../assets/images/pizza.jpg';
+import { Link } from 'react-router-dom';
 
 const restaurantData = [
   {
@@ -38,14 +39,16 @@ export default function PopularRestaurants() {
       <h2 className="section-title">🍽️ Popular Restaurants Near You</h2>
       <div className="restaurant-grid">
         {restaurantData.map((rest) => (
-          <div className="restaurant-card" key={rest.name}>
-            <img src={rest.image} alt={rest.name} className="restaurant-img" />
-            <div className="restaurant-info">
-              <h3>{rest.name}</h3>
-              <p>{rest.foodtype}</p>
-              <span className="rating-badge">{rest.rating}</span>
+          <Link to={"hotels/" + rest.name.toLowerCase()} className="hotel-category-link" key={rest.name}>
+            <div className="restaurant-card">
+              <img src={rest.image} alt={rest.name} className="restaurant-img" />
+              <div className="restaurant-info">
+                <h3>{rest.name}</h3>
+                <p>{rest.foodtype}</p>
+                <span className="rating-badge">{rest.rating}</span>
+              </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>

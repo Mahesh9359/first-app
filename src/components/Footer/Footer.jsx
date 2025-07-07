@@ -3,6 +3,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import './Footer.css';
 import { Instagram,Facebook,Twitter, Linkedin } from 'lucide-react';
+import logoImg from './../../assets/icons/logo.png'
 
 export default function Footer() {
   return (
@@ -10,7 +11,7 @@ export default function Footer() {
       <div className="footer-top">
         <div className="footer-brand">
           <img
-            src="https://cdn-icons-png.flaticon.com/512/616/616408.png"
+            src={logoImg}
             alt="FoodPanda Logo"
             className="footer-logo"
           />

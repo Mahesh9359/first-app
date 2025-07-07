@@ -1,13 +1,14 @@
 import React from 'react';
 import './Navbar.css';
 import { Link } from "react-router-dom";
+import logoImg from './../../assets/icons/logo.png'
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
         <img
-          src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png"
+          src={logoImg}
           alt="logo"
           className="logo-img"
         />

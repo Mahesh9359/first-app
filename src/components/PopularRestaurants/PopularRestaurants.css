@@ -17,6 +17,13 @@
   gap: 30px;
 }
 
+/* Fix for the Link component */
+.hotel-category-link {
+  display: contents; /* Makes the link behave as if it's not there for layout */
+  text-decoration: none;
+  color: inherit;
+}
+
 .restaurant-card {
   background: white;
   border-radius: 16px;
@@ -24,6 +31,7 @@
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
+  height: 100%; /* Ensure full height */
 }
 
 .restaurant-card:hover {

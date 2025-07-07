@@ -23,12 +23,15 @@ export default function Categories() {
     <section className="categories">
       <h2 className="categories-title">🍕 Popular Food Categories</h2>
       <div className="categories-grid">
-        {categories.map((category, index) =>  (
-          <div className="category-card" key={index}>
-            <img src={category.image} alt={category.name} className="category-image" />
-            <h3 className="category-name">{category.name}</h3>
-          </div>
+        {categories.map((category, index) => (
+          <Link to={"category/" + category.name.toLowerCase()} className="category-link" key={index} >
+            <div className="category-card" >
+              <img src={category.image} alt={category.name} className="category-image" />
+              <h3 className="category-name">{category.name}</h3>
+            </div>
+          </Link>
         ))}
+        
       </div>
     </section>
   );

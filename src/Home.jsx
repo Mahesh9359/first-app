@@ -12,7 +12,7 @@ export default function Home() {
     <div className="app-container">
       <Navbar />
       <main className="content">
-        <HeroSection />
+        <HeroSection title="Delicious Food Delivered Fast 🍱"/>
         <Categories />
         <PopularRestaurants />
       </main>
