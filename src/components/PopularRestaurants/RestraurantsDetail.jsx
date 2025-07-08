@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-import './../../App.css'
+import './../../app.css'
 import { useParams } from 'react-router-dom'
 
 
