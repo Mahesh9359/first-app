@@ -125,3 +125,97 @@
   font-size: 0.85rem;
   display: inline-block;
 }
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+}
+
+.product-image {
+  width: 100%;
+  max-height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product-name {
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.product-price {
+  color: #6a11cb;
+  font-weight: 600;
+}
+
+/* Better Add to Cart Button */
+.cart-btn {
+  margin-top: 12px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 14px rgba(106, 17, 203, 0.2);
+}
+
+.cart-btn:hover {
+  background: linear-gradient(to right, #5710a6, #1d5be2);
+  box-shadow: 0 8px 18px rgba(106, 17, 203, 0.3);
+  transform: translateY(-2px);
+}
+
+/* Quantity Control Styling */
+.quantity-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  gap: 12px;
+}
+
+.quantity-control button {
+  width: 36px;
+  height: 36px;
+  font-size: 1.2rem;
+  border: none;
+  background: #f0f0f0;
+  color: #333;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.quantity-control button:hover {
+  background: #e0e0e0;
+}
+
+.quantity-control span {
+  font-size: 1.1rem;
+  font-weight: 600;
+  min-width: 30px;
+  text-align: center;
+  display: inline-block;
+}
+
