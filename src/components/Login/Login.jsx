@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer/Footer';
 import './Login.css';
+import { Link } from 'react-router-dom';
 
 export default function Login() {
   return (
@@ -15,7 +16,7 @@ export default function Login() {
             <input type="email" placeholder="Email address" required />
             <input type="password" placeholder="Password" required />
             <button type="submit">Login</button>
-            <p className="login-link">Don't have an account? <a href="#">Sign up</a></p>
+            <p className="login-link">Don't have an account? <Link to="/signup">Sign up</Link></p>
           </form>
         </div>
       </main>
